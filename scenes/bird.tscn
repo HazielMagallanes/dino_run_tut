@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://crugqy7j4jt4a"]
 
 [ext_resource type="Texture2D" uid="uid://dyasm1fruq87r" path="res://assets/img/obstacles/Bird.png" id="1_rxtif"]
-[ext_resource type="Script" path="res://scenes/bird.gd" id="1_sru60"]
+[ext_resource type="Script" uid="uid://chgtlsl2t587l" path="res://scenes/bird.gd" id="1_sru60"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3nmc2"]
 atlas = ExtResource("1_rxtif")
@@ -40,11 +40,11 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fqt42"]
-size = Vector2(43, 51)
+size = Vector2(43, 71.5)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s8m3f"]
-radius = 32.0
-height = 84.0
+radius = 28.0
+height = 68.0
 
 [node name="Bird" type="Area2D"]
 script = ExtResource("1_sru60")
@@ -57,9 +57,9 @@ animation = &"flying"
 autoplay = "flying"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-38.5, 2.5)
+position = Vector2(-20, -20.25)
 shape = SubResource("RectangleShape2D_fqt42")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(15, 0)
+position = Vector2(12, 7)
 shape = SubResource("CapsuleShape2D_s8m3f")

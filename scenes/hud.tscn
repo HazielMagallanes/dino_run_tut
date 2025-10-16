@@ -5,6 +5,7 @@
 [node name="HUD" type="CanvasLayer"]
 
 [node name="ScoreLabel" type="Label" parent="."]
+texture_filter = 1
 offset_right = 183.0
 offset_bottom = 54.0
 theme_override_fonts/font = ExtResource("1_xwrdd")
@@ -13,7 +14,8 @@ text = "SCORE: "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="StartLabel" type="Label" parent="."]
+[node name="Start" type="Label" parent="."]
+texture_filter = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -31,7 +33,25 @@ text = "PRESS SPACE TO PLAY"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Title" type="Label" parent="."]
+texture_filter = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -267.5
+offset_top = 63.88
+offset_right = 267.5
+offset_bottom = 114.88
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_xwrdd")
+theme_override_font_sizes/font_size = 40
+text = "MACRAUCHENIA EN LA
+LAGUNA DE GÓMEZ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="HighScoreLabel" type="Label" parent="."]
+texture_filter = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
