@@ -6,15 +6,15 @@
 
 [node name="ScoreLabel" type="Label" parent="."]
 texture_filter = 1
-offset_right = 183.0
+offset_left = 19.0
+offset_right = 217.0
 offset_bottom = 54.0
 theme_override_fonts/font = ExtResource("1_xwrdd")
 theme_override_font_sizes/font_size = 40
-text = "SCORE: "
+text = "PUNTOS:"
 horizontal_alignment = 1
-vertical_alignment = 1
 
-[node name="Start" type="Label" parent="."]
+[node name="StartLabel" type="Label" parent="."]
 texture_filter = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -29,7 +29,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("1_xwrdd")
 theme_override_font_sizes/font_size = 40
-text = "PRESS SPACE TO PLAY"
+text = "Presiona ESPACIO para empezar"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -55,11 +55,11 @@ texture_filter = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -318.0
+offset_left = -424.0
+offset_right = -106.0
 offset_bottom = 54.0
 grow_horizontal = 0
 theme_override_fonts/font = ExtResource("1_xwrdd")
 theme_override_font_sizes/font_size = 40
-text = "HIGH SCORE: "
+text = "MEJOR: "
 horizontal_alignment = 1
-vertical_alignment = 1
